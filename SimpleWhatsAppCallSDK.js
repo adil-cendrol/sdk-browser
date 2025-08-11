@@ -11,7 +11,7 @@ class SimpleWhatsAppCallSDK {
 
   initWebSocket() {
     // Example WebSocket URL
-    const wsUrl = `wss://your-websocket-server.com?apiKey=${this.apiKey}`;
+    const wsUrl = `wss://464lquf5o3.execute-api.ap-south-1.amazonaws.com/production?apikey=14a565f323e44a7e87c2ad988d44c2a2&email=watest1@gmail.com`;
     this.ws = new WebSocket(wsUrl);
 
     this.ws.onopen = () => console.log("WS connected");
@@ -87,7 +87,7 @@ class SimpleWhatsAppCallSDK {
   }
 
   showModal() {
-    if (!this.modalContainer) return;
+    // if (!this.modalContainer) return;
 
     // Simple popup with close button and call info
     this.modalContainer.innerHTML = `
