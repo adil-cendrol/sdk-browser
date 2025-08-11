@@ -90,14 +90,14 @@ class SimpleWhatsAppCallSDK {
     // if (!this.modalContainer) return;
 
     // Simple popup with close button and call info
-    this.modalContainer.innerHTML = `
-      <div style="position:fixed;top:20%;left:50%;transform:translateX(-50%);
-                  background:#fff;padding:20px;box-shadow:0 0 10px rgba(0,0,0,0.3);
-                  z-index:1000; max-width:300px; border-radius:8px;">
-        <h3>Calling...</h3>
-        <button id="closeCallBtn">Hang Up</button>
-      </div>
-    `;
+    // this.modalContainer.innerHTML = `
+    //   <div style="position:fixed;top:20%;left:50%;transform:translateX(-50%);
+    //               background:#fff;padding:20px;box-shadow:0 0 10px rgba(0,0,0,0.3);
+    //               z-index:1000; max-width:300px; border-radius:8px;">
+    //     <h3>Calling...</h3>
+    //     <button id="closeCallBtn">Hang Up</button>
+    //   </div>
+    // `;
 
     document.getElementById('closeCallBtn').onclick = () => this.closeCall();
   }
